@@ -53,9 +53,10 @@
       }
 
       #top .navbar {
+        background-color: #F7F6FE;
         position: absolute ;
         min-width: 100%;
-        background-color: #F7F6FE;
+        height: fit-content;
       }
 
       .collapse {
@@ -63,14 +64,10 @@
         float: right;
       }
 
-      /* .navbar-nav .active > a {
-        border-bottom: 3px solid #F7F6FE;
-      } */
-
-      .nav .navbar-nav li a {
+      .navbar-nav li a {
         display: inline-block;
         height: 40px;
-        color: #8E81F5 !important;
+        color: #000 !important;
         font-size: 18px;
         position: static;
         z-index: 25;
@@ -133,6 +130,16 @@
 
       #hero {
           align-self: center;
+      }
+      
+      .footer__text{
+        align-items: center;
+      }
+
+      .footer__text a {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
       }
 
       /* .hero-cta {
@@ -243,7 +250,7 @@
 
     <div id="top">
 
-    <nav class="navbar container navbar-expand-lg navbar-light">
+    <!-- <nav class="navbar container navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -263,6 +270,39 @@
             <a class="nav-link" href="/src/download.html">Downlod</a>
           </li>
         </ul>
+      </div>
+    </nav> -->
+
+
+
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/src/index.html"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Browse</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body justify-content-end">
+            <ul class="navbar-nav">
+              <li class="nav-item active" id="home-tab">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item" id="features-tab">
+                <a class="nav-link" href="/src/index.html#features">Features</a>
+              </li>
+              <li class="nav-item" id="pricing-tab">
+                <a class="nav-link" href="/src/pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item" id="download-tab">
+                <a class="nav-link" href="/src/download.html">Downlod</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -313,6 +353,11 @@
             <i class="fa fa-github fa-inverse"></i>
           </a> -->
         </div>
+
+        <p class="footer__text">
+          <a href="/src/T&C.html">Terms of Use</a>
+          <a href="/src/privacypolicy.html">Privacy Policy</a>
+        </p>
 
         <hr />
 

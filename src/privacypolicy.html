@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title> Privacy Policy | Focus </title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="focus, bitroid, skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="Focus by Bitroid" />
+
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+      crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <style>
+      /* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
+
+      * {
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+      } */
+
+      #top {
+        background: #F7F6FE;
+        background-position: center;
+        background-size: cover;
+
+        /* background-color: #8E81F5;
+        background-image: linear-gradient(
+            135deg,
+            #8E81F5 0%,
+            #ff8aca 100%
+        );
+        color: #F7F6FE; */
+        height: 100%;
+        border-top: 0px;
+        padding-bottom: 10%;
+      }
+
+      #top .navbar {
+        position: absolute ;
+        min-width: 100%;
+        margin-top: 5px;
+        height: fit-content;
+      }
+
+      .collapse {
+        align-items: flex-end;
+        float: right;
+      }
+
+      .navbar-nav li a {
+        display: inline-block;
+        height: 40px;
+        color: #000 !important;
+        font-size: 18px;
+        position: static;
+        z-index: 25;
+        margin-right: 15px;
+      }
+
+      .navbar-nav a:hover {
+        transition: 0.3s ease-in-out;
+        border-bottom: 3px solid #8E81F5;
+      }
+
+      .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+
+       .overlay {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        object-fit: cover;
+        background-color: rgba(0, 0, 0, 0.50)
+      }
+      .container {
+        z-index: 30;
+      }
+
+      #hero {
+        height: fit-content;
+        align-self: center;
+        color: #8E81F5;
+      }
+
+      .hero-cta {
+        display: inline;
+        color: #000;
+      }
+
+      .footer__text{
+        align-items: center;
+      }
+
+      .footer__text a {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="top">
+
+    <!-- <nav class="navbar container navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse nav navbar-collapse navbar-expand-lg justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item active" id="home-tab">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="features-tab">
+            <a class="nav-link" rel="noreferrer" href="http://localhost:1234/privacypolicy.html">Features</a>
+          </li>
+          <li class="nav-item" id="pricing-tab">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item" id="download-tab">
+            <a class="nav-link" href="/src/download.html">Downlod</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+
+    <nav class="navbar navbar-light navbar-expand-lg bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/src/index.html"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Browse</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item active" id="home-tab">
+                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="features-tab">
+                  <a class="nav-link" href="/src/index.html#features">Features</a>
+                </li>
+                <li class="nav-item" id="pricing-tab">
+                  <a class="nav-link" href="/src/pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item" id="download-tab">
+                  <a class="nav-link" href="/src/download.html">Downlod</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- **** Hero Section **** -->
+
+
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Privacy Policy
+        </h1>
+        <p class="hero-cta load-hidden">
+          Last updated 1 April 2022
+        </p>
+        <br>
+        <p class="hero-cta">
+            This privacy notice for Bitroid Inc ("Company," "we," "us," or "our"), describes how and why we might collect, store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:
+          <br>
+          (i) Download and use our mobile application (Focus), or any other application of ours that links to this privacy notice
+          <br>
+          (ii) Engage with us in other related ways, including any sales, marketing, or events
+          <br>
+          <br>
+          Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:bitroid.dev@gmail.com">bitroid.dev@gmail.com</a>.
+        </p>
+
+        <p class="hero-cta load-hidden te">
+          SUMMARY OF KEY POINTS<br>
+          This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for.
+          <br>
+          <br>
+        </p>
+        <p class="hero-cta load-hidden">
+          What personal information do we process?<br>
+          When you visit, use, or navigate our Services, we may process personal information depending on how you interact with Bitroid Inc and the Services, the choices you make, and the products and features you use. Click <a href="#one">here</a> to learn more
+          <br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          Do we process any sensitive personal information? <br>
+          We do not process sensitive personal information.
+          <br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          Do we receive any information from third parties?<br>
+          We do not receive any information from third parties.
+          <br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          How do you process my information?<br>
+          We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click <a href="#two">here</a> to learn more.
+          <br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          In what situations and with which parties do we share personal information? <br>
+          We may share information in specific situations and with specific third parties. Click <a href="#four">here</a> to learn more
+          <br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          How do we keep your information safe? <br>
+          We have organizational and technical processes and procedures in place to protect your personal information. However, no electronic transmission over the internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Click <a href="#seven">here</a> to learn more.
+          <br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          What are your rights? <br>
+          Depending on where you are located geographically, the applicable privacy law may mean you have certain rights regarding your personal information. Click <a href="#eight">here</a> to learn more.
+          <br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          How do I exercise my rights? <br>
+          The easiest way to exercise your rights is by contacting us. We will consider and act upon any request in accordance with applicable data protection laws.
+          <br><br><br>
+        </p>
+
+        <p class="hero-cta load-hidden">
+          TABLE OF CONTENTS <br>
+          <a href="#one">1. WHAT INFORMATION DO WE COLLECT?</a><br>
+          <a href="#two">2. HOW DO WE PROCESS YOUR INFORMATION?</a><br>
+          <a href="#three">3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR PERSONAL INFORMATION?</a><br>
+          <a href="#four">4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?</a><br>
+          <a href="#five">5. HOW DO WE HANDLE YOUR GOOGLE LOGINS?</a><br>
+          <a href="#six">6. HOW LONG DO WE KEEP YOUR INFORMATION?</a><br>
+          <a href="#seven">7. HOW DO WE KEEP YOUR INFORMATION SAFE?</a><br>
+          <a href="#eight">8. WHAT ARE YOUR PRIVACY RIGHTS?</a><br>
+          <a href="#nine">9. CONTROLS FOR DO-NOT-TRACK FEATURES</a><br>
+          <a href="#ten">10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</a><br>
+          <a href="#eleven">11. DO WE MAKE UPDATES TO THIS NOTICE?</a><br>
+          <a href="#twelve">12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a><br>
+          <a href="#thirteen">13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</a><br><br><br>
+        </p>
+
+        <section id="one">
+            <p class="hero-cta load-hidden">
+                1. WHAT INFORMATION DO WE COLLECT?<br>
+                Personal information you disclose to us<br>
+                In Short: We collect personal information that you provide to us.<br>
+                We collect personal information that you voluntarily provide to us when you register on the Services, express an interest in obtaining information about us or our products and Services, when you participate in activities on the Services, or otherwise when you contact us
+                <br><br>
+                Personal Information Provided by You.<br>
+                The personal information that we collect depends on the context of your interactions with us and the Services, the choices you make, and the products and features you use. The personal information we collect may include the following:
+                <br>
+                a. names<br>
+                b. email addresses<br>
+                c. mailing addresses<br><br>
+                Sensitive Information.<br>
+                We do not process sensitive information.
+                <br><br>
+                Payment Data.<br>
+                We may collect data necessary to process your payment if you make purchases, such as your payment instrument number (such as a credit card number), and the security code associated with your payment instrument. All payment data is stored by Google Play Payments. You may find their privacy notice link(s) here: <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice" target="blank">https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&ldt=privacynotice</a>.
+                <br><br>
+                Google Account Login Data.<br>
+                We provide you with the option to register with us using your googel account details. When you choose to register in this way, we will collect the information described in the section called <a href="#five">"HOW DO WE HANDLE YOUR GOOGLE LOGINS?"</a> below.
+                <br><br>
+                Application Data.<br>
+                If you use our application(s), we also may collect the following information if you choose to provide us with access or permission:<br>
+                a. Mobile Device Data. We automatically collect device information (such as your mobile device ID, model, and manufacturer), operating system, version information and system configuration information, device and application identification numbers, browser type and version, hardware model Internet service provider and/or mobile carrier, and Internet Protocol (IP) address (or proxy server). If you are using our application(s), we may also collect information about the phone network associated with your mobile device, your mobile device’s operating system or platform, the type of mobile device you use, your mobile device’s unique device ID, and information about the features of our application(s) you accessed.<br>
+                b. Push Notifications. We may request to send you push notifications regarding your account or certain features of the application(s). If you wish to opt out from receiving these types of communications, you may turn them off in your device's settings.<br><br>
+      
+                This information is primarily needed to maintain the security and operation of our application(s), for troubleshooting, and for our internal analytics and reporting purposes.
+                <br><br>
+                All personal information that you provide to us must be true, complete, and accurate, and you must notify us of any changes to such personal information.
+                <br><br>
+                Information automatically collected<br>
+                In Short: Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.
+                <br>
+                We automatically collect certain information when you visit, use, or navigate the Services. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Services, and other technical information. This information is primarily needed to maintain the security and operation of our Services, and for our internal analytics and reporting purposes.
+                <br><br>
+                The information we collect includes:<br>
+                a. Log and Usage Data. Log and usage data is service-related, diagnostic, usage, and performance information our servers automatically collect when you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address, device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information (such as system activity, error reports (sometimes called "crash dumps"), and hardware settings).<br>
+                b. Device Data. We collect device data such as information about your computer, phone, tablet, or other device you use to access the Services. Depending on the device used, this device data may include information such as your IP address (or proxy server), device and application identification numbers, location, browser type, hardware model, Internet service provider and/or mobile carrier, operating system, and system configuration information.<br><br><br>
+              </p>
+        </section>
+
+        <section id="two">
+            <p class="hero-cta load-hidden">
+                2. HOW DO WE PROCESS YOUR INFORMATION? <br>
+                In Short: We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.
+                <br>
+                We process your personal information for a variety of reasons, depending on how you interact with our Services, including:
+                <br>
+                a. To facilitate account creation and authentication and otherwise manage user accounts. We may process your information so you can create and log in to your account, as well as keep your account in working order.<br>
+                b. To deliver and facilitate delivery of services to the user. We may process your information to provide you with the requested service.<br>
+                c. To fulfill and manage your orders. We may process your information to fulfill and manage your orders, payments, returns, and exchanges made through the Services.<br>
+                d. To request feedback. We may process your information when necessary to request feedback and to contact you about your use of our Services.<br>
+                e. To save or protect an individual's vital interest. We may process your information when necessary to save or protect an individual’s vital interest, such as to prevent harm.<br><br><br>
+              </p>
+        </section>
+
+        <section id="three">
+            <p class="hero-cta load-hidden" id="three">
+                3. WHAT LEGAL BASES DO WE RELY ON TO PROCESS YOUR INFORMATION?
+                <br>
+                In Short: We only process your personal information when we believe it is necessary and we have a valid legal reason (i.e., legal basis) to do so under applicable law, like with your consent, to comply with laws, to provide you with services to enter into or fulfill our contractual obligations, to protect your rights, or to fulfill our legitimate business interests.
+                <br><br>
+                If you are located in the EU or UK, this section applies to you.<br>
+                The General Data Protection Regulation (GDPR) and UK GDPR require us to explain the valid legal bases we rely on in order to process your personal information. As such, we may rely on the following legal bases to process your personal information:
+                <br>
+                a. Consent. We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time. Check "Withdrawing your consent" under <a href="#eight">"WHAT ARE YOUR PRIVACY RIGHTS"</a> section to learn more.<br>
+                b. Performance of a Contract. We may process your personal information when we believe it is necessary to fulfill our contractual obligations to you, including providing our Services or at your request prior to entering into a contract with you.<br>
+                c. Legitimate Interests. We may process your information when we believe it is reasonably necessary to achieve our legitimate business interests and those interests do not outweigh your interests and fundamental rights and freedoms. For example, we may process your personal information for some of the purposes described in order to:<br>
+                        (i) Understand how our users use our products and services so we can improve user experience<br>
+                d. Legal Obligations. We may process your information where we believe it is necessary for compliance with our legal obligations, such as to cooperate with a law enforcement body or regulatory agency, exercise or defend our legal rights, or disclose your information as evidence in litigation in which we are involved.<br>
+                e. Vital Interests. We may process your information where we believe it is necessary to protect your vital interests or the vital interests of a third party, such as situations involving potential threats to the safety of any person.
+                <br><br>
+                If you are located in Canada, this section applies to you.
+                <br>
+                We may process your information if you have given us specific permission (i.e., express consent) to use your personal information for a specific purpose, or in situations where your permission can be inferred (i.e., implied consent). You can withdraw your consent at any time. Check "Withdrawing your consent" under <a href="#eight">"WHAT ARE YOUR PRIVACY RIGHTS"</a> section to learn more.
+                <br><br>
+                In some exceptional cases, we may be legally permitted under applicable law to process your information without your consent, including, for example:<br>
+                a. If collection is clearly in the interests of an individual and consent cannot be obtained in a timely way<br>
+                b. For investigations and fraud detection and prevention<br>
+                c. For business transactions provided certain conditions are met<br>
+                d. If it is contained in a witness statement and the collection is necessary to assess, process, or settle an insurance claim<br>
+                e. For identifying injured, ill, or deceased persons and communicating with next of kin<br>
+                f. If we have reasonable grounds to believe an individual has been, is, or may be victim of financial abuse<br>
+                g. If it is reasonable to expect collection and use with consent would compromise the availability or the accuracy of the information and the collection is reasonable for purposes related to investigating a breach of an agreement or a contravention of the laws of Canada or a province<br>
+                h. If disclosure is required to comply with a subpoena, warrant, court order, or rules of the court relating to the production of records<br>
+                i. If it was produced by an individual in the course of their employment, business, or profession and the collection is consistent with the purposes for which the information was produced<br>
+                j. If the collection is solely for journalistic, artistic, or literary purposes<br>
+                k. If the information is publicly available and is specified by the regulations<br><br><br>
+              </p>
+        </section>
+
+        <section id="four">
+            <p class="hero-cta load-hidden">
+                4. WHEN AND WITH WHOM DO WE SHARE YOUR PERSONAL INFORMATION?
+                <br>
+                In Short: We may share information in specific situations described in this section and/or with the following third parties.
+                <br><br>
+                We may need to share your personal information in the following situations:<br>
+                a. Business Transfers. We may share or transfer your information in connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business to another company.<br><br><br>
+              </p>
+        </section>
+
+        <section id="five">
+            <p class="hero-cta load-hidden">
+                5. HOW DO WE HANDLE YOUR GOOGLE LOGINS?
+                <br>
+                In Short: when you choose to register or log in to our services using a google account, we may have access to certain information about you.
+                <br>
+                Our Services offer you the ability to register and log in using your google account details. Where you choose to do this, we will receive certain profile information about you from your account provider. The profile information we receive may vary but often include your name, email address, and profile picture, as well as other information you choose to make public on the platform.
+                <br>
+                We will use the information we receive only for the purposes that are described in this privacy notice or that are otherwise made clear to you on the relevant Services. Please note that we do not control, and are not responsible for, other uses of your personal information by your third-party account provider. We recommend that you review their privacy notice to understand how they collect, use and share your personal information, and how you can set your privacy preferences on their sites and apps.
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="six">
+            <p class="hero-cta load-hidden">
+                6. HOW LONG DO WE KEEP YOUR INFORMATION?
+                <br>
+                In Short: We keep your information for as long as necessary to fulfill the purposes outlined in this privacy notice unless otherwise required by law.
+                <br>
+                We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). No purpose in this notice will require us keeping your personal information for longer than the period of time in which users have an account with us
+                <br>
+                When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize such information, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="seven">
+            <p class="hero-cta load-hidden">
+                7. HOW DO WE KEEP YOUR INFORMATION SAFE?
+                <br>
+                In Short: We aim to protect your personal information through a system of organizational and technical security measures.
+                <br>
+                We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process. However, despite our safeguards and efforts to secure your information, no electronic transmission over the Internet or information storage technology can be guaranteed to be 100% secure, so we cannot promise or guarantee that hackers, cybercriminals, or other unauthorized third parties will not be able to defeat our security and improperly collect, access, steal, or modify your information. Although we will do our best to protect your personal information, transmission of personal information to and from our Services is at your own risk. You should only access the Services within a secure environment.
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="eight">
+            <p class="hero-cta load-hidden">
+                8. WHAT ARE YOUR PRIVACY RIGHTS?
+                <br>
+                In Short: In some regions, such as the European Economic Area (EEA), United Kingdom (UK), and Canada, you have rights that allow you greater access to and control over your personal information. You may review, change, or terminate your account at any time.
+                <br>
+                In some regions (like the EEA, UK, and Canada), you have certain rights under applicable data protection laws. These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict the processing of your personal information; and (iv) if applicable, to data portability. In certain circumstances, you may also have the right to object to the processing of your personal information. You can make such a request by contacting us by using the contact details provided in the section “<a href="#twelve">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>” below.
+                <br>
+                We will consider and act upon any request in accordance with applicable data protection laws.
+                <br>
+                If you are located in the EEA or UK and you believe we are unlawfully processing your personal information, you also have the right to complain to your local data protection supervisory authority. You can find their contact details here: <a href="https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm">https://ec.europa.eu/justice/data-protection/bodies/authorities/index_en.htm</a>.
+                <br>
+                If you are located in Switzerland, the contact details for the data protection authorities are available here: <a href="https://www.edoeb.admin.ch/edoeb/en/home.html">https://www.edoeb.admin.ch/edoeb/en/home.html</a>.
+                <br>
+                Withdrawing your consent: If we are relying on your consent to process your personal information, which may be express and/or implied consent depending on the applicable law, you have the right to withdraw your consent at any time. You can withdraw your consent at any time by contacting us by using the contact details provided in the section "<a href="#twelve">HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</a>" below or updating your preferences.
+                <br>
+                However, please note that this will not affect the lawfulness of the processing before its withdrawal, nor when applicable law allows, will it affect the processing of your personal information conducted in reliance on lawful processing grounds other than consent.
+                <br><br>
+                Account Information<br>
+                If you would at any time like to review or change the information in your account or terminate your account, you can do the same by going to app settings.
+                <br>
+                Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.
+                <br>
+                If you have questions or comments about your privacy rights, you may email us at <a href="mailto:bitroid.dev@gmail.com">bitroid.dev@gmail.com</a>.
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="nine">
+            <p class="hero-cta load-hidden">
+                9. CONTROLS FOR DO-NOT-TRACK FEATURES
+                <br>
+                Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy notice.
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="ten">
+            <p class="hero-cta load-hidden">
+                10. DO CALIFORNIA RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?
+                <br>
+                In Short: Yes, if you are a resident of California, you are granted specific rights regarding access to your personal information.
+                <br>
+                California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+                <br>
+                If you are under 18 years of age, reside in California, and have a registered account with Services, you have the right to request removal of unwanted data that you publicly post on the Services. To request removal of such data, please contact us using the contact information provided below and include the email address associated with your account and a statement that you reside in California. We will make sure the data is not publicly displayed on the Services, but please be aware that the data may not be completely or comprehensively removed from all our systems (e.g., backups, etc.).
+                <br><br>
+                CCPA Privacy Notice<br>
+                The California Code of Regulations defines a "resident" as:<br>
+                    (1) every individual who is in the State of California for other than a temporary or transitory purpose and<br>
+                    (2) every individual who is domiciled in the State of California who is outside the State of California for a temporary or transitory purpose<br>
+                All other individuals are defined as "non-residents."<br>
+                If this definition of "resident" applies to you, we must adhere to certain rights and obligations regarding your personal information.
+                <br><br>
+                What categories of personal information do we collect?<br>
+                We have collected the following categories of personal information in the past twelve (12) months:<br>
+                A. Identifiers<br>
+                Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name
+                <br>
+                NOT Collected
+                <br><br>
+                B. Personal information categories listed in the California Customer Records statute
+                <br>
+                Name, contact information, education, employment, employment history, and financial information
+                <br>
+                Collected
+                <br><br>
+                C. Protected classification characteristics under California or federal law<br>
+                Gender and date of birth<br>
+                NOT Collected
+                <br><br>
+                D. Commercial information<br>
+                Transaction information, purchase history, financial details, and payment information
+                <br>
+                NOT Collected
+                <br><br>
+                E. Biometric information
+                <br>
+                Fingerprints and voiceprints
+                <br>
+                NOT Collected<br><br>
+                F. Internet or other similar network activity
+                <br>
+                Browsing history, search history, online behavior, interest data, and interactions with our and other websites, applications, systems, and advertisements
+                <br>
+                NOT collected
+                <br><br>
+                G. Geolocation data
+                <br>
+                Device location
+                <br>
+                NOT Collected
+                <br><br>
+                H. Audio, electronic, visual, thermal, olfactory, or similar information
+                <br>
+                Images and audio, video or call recordings created in connection with our business activities
+                <br>
+                NOT Collected
+                <br><br>
+                I. Professional or employment-related information
+                <br>
+                Business contact details in order to provide you our services at a business level or job title, work history, and professional qualifications if you apply for a job with us
+                <br>
+                NOT Collected
+                <br><br>
+                J. Education Information
+                <br>
+                Student records and directory information
+                <br>
+                NOT Collected
+                <br><br>
+                K. Inferences drawn from other personal information
+                <br>
+                Inferences drawn from any of the collected personal information listed above to create a profile or summary about, for example, an individual’s preferences and characteristics
+                <br>
+                NOT Collected
+                <br><br>
+                We may also collect other personal information outside of these categories instances where you interact with us in person, online, or by phone or mail in the context of:
+                <br>
+                a. Receiving help through our customer support channels;<br>
+                b. Participation in customer surveys or contests; and<br>
+                c. Facilitation in the delivery of our Services and to respond to your inquiries.<br>
+                <br>
+                How do we use and share your personal information?<br>
+                More information about our data collection and sharing practices can be found in this privacy notice.<br>
+                You may contact us by email at <a href="mailto:bitroid.dev@gmail.com">bitroid.dev@gmail.com</a>, or by referring to the contact details at the bottom of this document<br>
+                If you are using an authorized agent to exercise your right to opt out we may deny a request if the authorized agent does not submit proof that they have been validly authorized to act on your behalf.
+                <br><br>
+                Will your information be shared with anyone else?<br>
+                We may disclose your personal information with our service providers pursuant to a written contract between us and each service provider. Each service provider is a for-profit entity that processes the information on our behalf.
+                <br>
+                We may use your personal information for our own business purposes, such as for undertaking internal research for technological development and demonstration. This is not considered to be "selling" of your personal information.
+                <br>
+                Bitroid Inc has not disclosed or sold any personal information to third parties for a business or commercial purpose in the preceding twelve (12) months. Bitroid Inc will not sell personal information in the future belonging to website visitors, users, and other consumers.
+                <br><br>
+                Your rights with respect to your personal data<br>
+                Right to request deletion of the data — Request to delete<br>
+                You can ask for the deletion of your personal information. If you ask us to delete your personal information, we will respect your request and delete your personal information, subject to certain exceptions provided by law, such as (but not limited to) the exercise by another consumer of his or her right to free speech, our compliance requirements resulting from a legal obligation, or any processing that may be required to protect against illegal activities.
+                <br><br>
+                Right to be informed — Request to know<br>
+                Depending on the circumstances, you have a right to know:<br>
+                a. whether we collect and use your personal information;<br>
+                b. the categories of personal information that we collect;<br>
+                c. the purposes for which the collected personal information is used;<br>
+                d. whether we sell your personal information to third parties;<br>
+                e. the categories of personal information that we sold or disclosed for a business purpose;<br>
+                f. the categories of third parties to whom the personal information was sold or disclosed for a business purpose; and<br>
+                g. the business or commercial purpose for collecting or selling personal information.<br>
+                In accordance with applicable law, we are not obligated to provide or delete consumer information that is de-identified in response to a consumer request or to re-identify individual data to verify a consumer request.
+                <br><br>
+                Right to Non-Discrimination for the Exercise of a Consumer’s Privacy Rights
+                <br>
+                We will not discriminate against you if you exercise your privacy rights.
+                <br><br>
+                Verification process
+                <br>
+                Upon receiving your request, we will need to verify your identity to determine you are the same person about whom we have the information in our system. These verification efforts require us to ask you to provide information so that we can match it with information you have previously provided us. For instance, depending on the type of request you submit, we may ask you to provide certain information so that we can match the information you provide with the information we already have on file, or we may contact you through a communication method (e.g., email) that you have previously provided to us. We may also use other verification methods as the circumstances dictate.
+                <br>
+                We will only use personal information provided in your request to verify your identity or authority to make the request. To the extent possible, we will avoid requesting additional information from you for the purposes of verification. However, if we cannot verify your identity from the information already maintained by us, we may request that you provide additional information for the purposes of verifying your identity and for security or fraud-prevention purposes. We will delete such additionally provided information as soon as we finish verifying you.
+                <br><br>
+                Other privacy rights<br>
+                A. You may object to the processing of your personal information.<br>
+                B. You may request correction of your personal data if it is incorrect or no longer relevant, or ask to restrict the processing of the information.<br>
+                C. You can designate an authorized agent to make a request under the CCPA on your behalf. We may deny a request from an authorized agent that does not submit proof that they have been validly authorized to act on your behalf in accordance with the CCPA.<br>
+                D. You may request to opt out from future selling of your personal information to third parties. Upon receiving an opt-out request, we will act upon the request as soon as feasibly possible, but no later than fifteen (15) days from the date of the request submission.<br>
+                <br>
+                To exercise these rights, you can contact us by email at <a href="mailto:bitroid.dev@gmail.com">bitroid.dev@gmail.com</a>, or by referring to the contact details at the bottom of this document. If you have a complaint about how we handle your data, we would like to hear from you.
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="eleven">
+            <p class="hero-cta load-hidden">
+                11. DO WE MAKE UPDATES TO THIS NOTICE?
+                <br>
+                In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.
+                <br>
+                We may update this privacy notice from time to time. The updated version will be indicated by an updated "Revised" date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice, we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice frequently to be informed of how we are protecting your information.
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="twelve">
+            <p class="hero-cta load-hidden">
+                12. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?
+                <br>
+                If you have questions or comments about this notice, you may email us at: <a href="mailto:bitroid.dev@gmail.com">bitroid.dev@gmail.com</a>.           
+                <br><br><br>
+              </p>
+        </section>
+
+        <section id="thirteen">
+            <p class="hero-cta load-hidden">
+                13. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?
+                <br>
+                Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, change that information, or delete it in some circumstances. To request to review, update, or delete your personal information, please submit a request at bitroid.dev@gmail.com. You can even use "Delete my account and data option in app settings to completely delete your data."
+                <br><br><br>
+              </p>
+        </section>
+
+      </div>
+    </section>
+
+
+
+  </div>
+    <!-- /END Hero Section -->
+
+    
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a> -->
+          <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a> -->
+        </div>
+
+        <p class="footer__text">
+            <a href="/src/T&C.html">Terms of Use</a>
+            <a href="/src/privacypolicy.html">Privacy Policy</a>
+          </p>
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          © 2022 - Made With ❤️ By
+          <a rel="noreferrer" href="" target="_blank"
+            >Bitroid Inc</a
+          >
+        </p>
+
+        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
+        <p class="mt-3 pt-3">
+          
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
