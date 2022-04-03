@@ -1,6 +1,5 @@
 node_modules/
 dist/
 .parcel-cache
-src/assets/header.gif
 .DS_Store
 src/assets/.DS_Store
