@@ -1,12 +1,23 @@
+// #top {
+//   .navbar-brand {
+//     @include respond(phone) {
+//       visibility: hidden;
+//     }
+//     @include respond(phone-xs) {
+//       visibility: hidden;
+//     }
+//   }
+// }
+
 #hero {
   min-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: transparent;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -20,9 +31,10 @@
 
   // If you want to set a background image on the hero section, uncomment these with your custom image
 
-  /* background: url("/src/assets/[your-image].png");
+  // background: url("/src/assets/header.mp4");
+  // background-color: aqua;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 
   @include respond(phone) {
     padding: 0rem $default-font-size;
@@ -50,19 +62,70 @@
     }
   }
 
-  .hero-cta {
-    display: flex;
+  //flex
 
+  .hero-cta {
+    display: block;
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+    text-align: left;
+    
     @include respond(tab-port) {
       justify-content: center;
+      text-align: center;
     }
 
     & a {
       font-size: 2.4rem;
+      display: inline-block;
 
       @include respond(phone) {
         font-size: 2rem;
       }
+    }
+  }
+
+  .features-list {
+    display: block;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 2rem;
+    
+    @include respond(tab-port) {
+      justify-content: center;
+      text-align: left;
+    }
+
+    & a {
+      font-size: 2rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .features-title {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: left;
+    color: $white-color;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+    }
+    @include respond(tab-port) {
+      font-size: 2.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 2.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 1.8rem;
     }
   }
 }

@@ -1,24 +1,16 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.1",
+  "name": "focuswebsite",
+  "version": "1.0.0",
   "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
+  "description": "Focus Website",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
-  },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Bitroid Inc",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cobidev/simplefolio/issues"
-  },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.0.1",
     "parcel": "^2.0.1",
