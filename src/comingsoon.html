@@ -27,6 +27,7 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <style>
@@ -37,26 +38,9 @@
       } */
 
       #top {
-        background: #F7F6FE;
+        /* background: #F7F6FE;
         background-position: center;
-        background-size: cover;
-
-        /* background-color: #8E81F5;
-        background-image: linear-gradient(
-            135deg,
-            #8E81F5 0%,
-            #ff8aca 100%
-        ); */
-        /* min-height: max-content; */
-        /* min-height: 220%; */
-        height: fit-content;
-        color: #F7F6FE;
-        border-top: 0px;
-      }
-
-      #hero {
-        background-position: center;
-        background-size: cover;
+        background-size: cover; */
 
         background-color: #8E81F5;
         background-image: linear-gradient(
@@ -64,14 +48,10 @@
             #8E81F5 0%,
             #ff8aca 100%
         );
-        height: fit-content;
         color: #F7F6FE;
+        height: 100%;
         border-top: 0px;
         padding-bottom: 10%;
-        padding-top: 10%;
-          display: flex;
-          height: auto;
-          /* margin-top: 10cm; */
       }
 
       #top .navbar {
@@ -101,25 +81,60 @@
         transition: 0.3s ease-in-out;
         border-bottom: 3px solid #8E81F5;
       }
+
+      /* .navbar {
+        position: absolute;
+        margin-top: 5px;
+        position: sticky;
+        z-index: 25;
+      } */
+      .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+
+       .overlay {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        object-fit: cover;
+        background-color: rgba(0, 0, 0, 0.50)
+      }
+      /* .container {
+        z-index: 2;
+      } */
+      /* .header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+      }
+
+      .header .header-video-bg {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .header .video-overlay {
+        background-color: #8E81F5;
+      } */
+
       .container {
         z-index: 30;
       }
 
-      .hero-title {
-          color: #F7F6FE;
+      #hero {
+          align-self: center;
       }
-
-      .hero-cta {
-          color: #F7F6FE;
-          display: block;
-      }
-
-      .pricing-item {
-          border: 5px solid #8E81F5;
-          border-radius: 30px;
-          height: 5cm;
-      }
-
+      
       .footer__text{
         align-items: center;
       }
@@ -130,15 +145,137 @@
         margin-left: 10px;
       }
 
+      /* dialog {
+            color: green;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: italic;
+        } */
+
+
+        /* Style the form element with a border around it */
+
+
+
+
+/* Style the input element */
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 2pt;
+  display: inline-block;
+  border: 1px solid #F7F6FE;
+  box-sizing: border-box;
+}
+
+      /* .hero-cta {
+          font-size: 2.4rem;
+          text-align: left;
+          padding-bottom: 20px;
+      } */
+
+      /* .download-btn {
+          background-image: red;
+          background-color: #8E81F5;
+      } */
+
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script> -->
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
-    <div id="top">
 
-    <!-- change -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <video loop autoplay muted class="video-background" src="/src/assets/header.mp4"></video>
+    <div class="overlay"></div> -->
+
+    <!-- <nav class="navbar container navbar-expand navbar-light bg-transparent">
+      <a class="navbar-brand" href="#"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse nav navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item" id="home-tab">
+            <a class="nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="features-tab">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item" id="pricing-tab">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item" id="download-tab">
+            <a class="nav-link" href="#">Downlod</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-end">
+      <ul class="nav nav-pills nav-fill">
+          <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+      </ul>
+  </nav> -->
+
+    <div id="top">
 
     <!-- <nav class="navbar container navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
@@ -148,13 +285,13 @@
       <div class="collapse nav navbar-collapse navbar-expand-lg justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item active" id="home-tab">
-            <a class="nav-link" href="/src/index.html">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item" id="features-tab">
-            <a class="nav-link" href="/src/index.html">Features</a>
+            <a class="nav-link" rel="noreferrer" target="_blank" href="http://localhost:1234/index.html#about">Features</a>
           </li>
           <li class="nav-item" id="pricing-tab">
-            <a class="nav-link" href="/src/pricing.html">Pricing</a>
+            <a class="nav-link" href="pricing.html">Pricing</a>
           </li>
           <li class="nav-item" id="download-tab">
             <a class="nav-link" href="/src/download.html">Downlod</a>
@@ -197,48 +334,49 @@
     </nav>
 
 
-
-    </div>
-
+    <!-- <div class="overlay"></div> -->
+    <!-- **** Hero Section **** -->
     <section id="hero" class="jumbotron">
-        <div class="container">
-            <h1 class="hero-title load-hidden">
-                Focus Premium <br>
-                <span class="hero-title features-title load-hidden ">
-                    Become a Preminum Member today and enjoy the following benifits
-                </span>
-            </h1>
-            <!-- <p class="hero-title features-title load-hidden">
-                Purchase a Focus Premium subscription to enjoy the following benifits:
-            </p> -->
-            <ul class="hero-cta features-list load-hidden">
-                <li class="feature">Custom Focus Session durations.</li>
-                <li class="feature">Custom Break durations.</li>
-                <li class="feature">Animated Session Backgrounds.</li>
-                <li class="feature">Better technical support.</li>
-                <li class="feature">And much more comming soon..</li>
-            </ul>
-            <p class="hero-cta features-title load-hidden">
-                Premium starting at ₹41.99/month
-            </p>
-            <p class="hero-cta load-hidden">
-              <!-- <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a> -->
-              <a
-                rel="noreferrer"
-                target="_blank"
-                class="download-btn cta-btn cta-btn--resume"
-                href="https://play.google.com/store/apps/details?id=com.bitroid.focus">
-                Get the Focus app to subscribe
-              </a>
-            </p>
-            <!-- <p class="hero-cta features-list load-hidden">
-              Get the Focus app to subscribe
-            </p> -->
-        </div>
-        <br>
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Coming Soon
+          <!-- <br /> -->
+        </h1>
+        <p id="main" class="hero-cta load-hidden">
+            Focus will be dropping by soon for your android device. Stay tuned
+            <br>
+            Drop your email, we'll remind you once it's available.
+            <br><br>
+            <!-- <div class="hero-cta load-hidden">
+                <input type="text" placeholder="Email address" name="mail" required>
+            </div> -->
+            <input id="email" type="text" placeholder="Email address" name="mail" required>
+            <br>
+          <!-- <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a> -->
+          <!-- <a
+            rel="noreferrer"
+            target="_blank"
+            class="download-btn cta-btn cta-btn--resume"
+            href="https://play.google.com/store/apps/details?id=com.bitroid.focus">
+            Remind me
+          </a> -->
+
+          <!-- <dialog open>
+
+          </dialog> -->
+
+          <a id="remind" class="download-btn cta-btn cta-btn--resume">
+            Remind me
+          </a>
+
+          <!-- <button id="remind">
+              Hello
+          </button> -->
+        </p>
+      </div>
     </section>
-    
-  <!-- </div> -->
+  </div>
+    <!-- /END Hero Section -->
 
     
 
@@ -283,5 +421,10 @@
     <!-- /END Footer Section -->
 
     <script defer type="module" src="index.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script defer type="module" src="scripts/comingsoon.js"></script>
+
   </body>
 </html>
