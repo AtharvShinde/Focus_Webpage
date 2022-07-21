@@ -23,6 +23,7 @@
     "firebase": "^9.8.2",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "protobufjs": "^7.0.0",
     "vanilla-tilt": "^1.7.2"
   }
 }
