@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title> Delete Your Account | Focus </title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="focus, bitroid, skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="Focus by Bitroid" />
+
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet" 
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+      crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <style>
+      /* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap');
+
+      * {
+        font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+      } */
+
+      #top {
+        background: #F7F6FE;
+        background-position: center;
+        background-size: cover;
+
+        /* background-color: #8E81F5;
+        background-image: linear-gradient(
+            135deg,
+            #8E81F5 0%,
+            #ff8aca 100%
+        );
+        color: #F7F6FE; */
+        height: 100%;
+        border-top: 0px;
+        padding-bottom: 10%;
+      }
+
+      #top .navbar {
+        position: absolute ;
+        min-width: 100%;
+        margin-top: 5px;
+        color: #8E81F5 !important;
+        height: fit-content;
+      }
+
+      .collapse {
+        align-items: flex-end;
+        float: right;
+      }
+
+      .navbar-nav li a {
+        display: inline-block;
+        height: 40px;
+        color: #8E81F5 !important;
+        font-size: 18px;
+        position: static;
+        z-index: 25;
+        margin-right: 15px;
+      }
+
+      .navbar-nav a:hover {
+        transition: 0.3s ease-in-out;
+        border-bottom: 3px solid #8E81F5;
+      }
+
+      .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+      }
+
+       .overlay {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        object-fit: cover;
+        background-color: rgba(0, 0, 0, 0.50)
+      }
+      .container {
+        z-index: 30;
+      }
+
+      #hero {
+        height: fit-content;
+        align-self: center;
+        color: #8E81F5;
+      }
+
+      .hero-cta {
+        display: inline;
+        color: #000;
+      }
+
+      .footer__text{
+        align-items: center;
+      }
+
+      .footer__text a {
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="top">
+
+    <!-- <nav class="navbar container navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse nav navbar-collapse navbar-expand-lg justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item active" id="home-tab">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item" id="features-tab">
+            <a class="nav-link" rel="noreferrer" href="http://localhost:1234/privacypolicy.html">Features</a>
+          </li>
+          <li class="nav-item" id="pricing-tab">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item" id="download-tab">
+            <a class="nav-link" href="/src/download.html">Downlod</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
+
+    <nav class="navbar navbar-light navbar-expand-lg bg-transparent fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/src/index.html"><img src="/src/assets/logo_fg_icon.png" height="40%" width="40%"></img></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Browse</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body justify-content-end">
+              <ul class="navbar-nav">
+                <li class="nav-item active" id="home-tab">
+                  <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" id="features-tab">
+                  <a class="nav-link" href="/src/index.html#features">Features</a>
+                </li>
+                <!-- <li class="nav-item" id="pricing-tab">
+                  <a class="nav-link" href="/src/pricing.html">Pricing</a>
+                </li> -->
+                <li class="nav-item" id="download-tab">
+                  <a class="nav-link" href="/src/download.html">Download</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- **** Hero Section **** -->
+
+
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Delete Your Account        </h1>
+        <p class="hero-cta load-hidden">
+          Last updated 11 April 2024
+        </p>
+        <br>
+        <p class="hero-cta">
+          "To delete your account associated with Focus, you can follow the below steps: <br> <br>
+
+          If you're logged in using your Google account:<br> <br>
+          • Open the app and navigate to settings by clicking your profile picture on the top right corner.<br>
+          
+          • Scroll down till you see "Delete your account and data", and open it.<br>
+          
+          • Follow the on screen instructions to delete your account.<br><br>
+          
+          Note: You might be asked to re-authenticate using your google account. Please choose the one you've initially used. <br>
+          
+          If you're logged in without your Google account: <br><br> 
+          • Open the app and navigate to settings by clicking your profile picture on the top right corner.<br>
+          
+          • Scroll down till you see the "Logout" option.<br>
+          
+          • Click "Logout" and confirm to delete your account and data.</p>
+
+
+
+
+      </div>
+    </section>
+
+  </div>
+    <!-- /END Hero Section -->
+
+    
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a> -->
+          <a rel="noreferrer" href="https://www.linkedin.com/company/bitroid" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a> -->
+        </div>
+
+        <p class="footer__text">
+            <a href="/src/T&C.html">Terms of Use</a>
+            <a href="/src/privacypolicy.html">Privacy Policy</a>
+          </p>
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          © 2022 - Made With ❤️ By
+          <a rel="noreferrer" href="" target="_blank"
+            >Bitroid Inc</a
+          >
+        </p>
+
+        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
+        <p class="mt-3 pt-3">
+          
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
